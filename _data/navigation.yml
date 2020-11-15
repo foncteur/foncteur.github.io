@@ -1,4 +1,4 @@
-- name: Home
+- name: Back to homepage
   link: /
-- name: Blog
+- name: My blog
   link: /blog.html
