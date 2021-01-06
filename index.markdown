@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Binary Crocodile
+title: Odile Radet
 ---
 # Welcome!
 
@@ -22,7 +22,7 @@ You can find my résumé here.
 
 I’m mainly interested in compilers and interpreters, programming languages and functional programming, along with formal verification.
 
-My software projects can be found on [Github](https://github.com/binarycrocodile) and [Gitlab](https://gitlab.com/krokodile). You can find some of my reports (in French) for old programming projects below:
+My software projects can be found on [Github](https://github.com/foncteur) and [Gitlab](https://gitlab.com/krokodile). You can find some of my reports (in French) for old programming projects below:
 
 - [Delaunay Triangulation](delaunay.pdf) (OCaml)
 
