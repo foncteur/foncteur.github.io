@@ -18,10 +18,10 @@ Now, let's see a few examples, that should be enough to understand the general s
 
 Let's start with strings and ints.
 
-First of all, the program `"hello world"`{.scheme} simply returns the string `"hello world"`{.scheme}. The result of the evaluation is then, as always, printed by the interpreter.
-In this very simple language, we shall also have ints : `3`{.scheme} is a valid program, that will return `3`{.scheme}.
+First of all, the program `"hello world"` simply returns the string `"hello world"`. The result of the evaluation is then, as always, printed by the interpreter.
+In this very simple language, we shall also have ints : `3` is a valid program, that will return `3`.
 
-We also have a few primitives, such as `+`{.scheme}. For now, let's say that this operator applies to only two arguments.
+We also have a few primitives, such as `+`. For now, let's say that this operator applies to only two arguments.
 It can be used as below:
 
 ```scheme
@@ -31,11 +31,11 @@ It can be used as below:
 It is a prefix operator, unlike the addition in most modern languages. The use of parentheses is quite simple: it means that the first element is applied to the other elements.
 
 
-We have booleans, represented by `#t`{.scheme} and `#f`{.scheme}, that evaluate to themselves. Another special symbol is `#nil`{.scheme} and will be useful for lists.
+We have booleans, represented by `#t` and `#f`, that evaluate to themselves. Another special symbol is `#nil` and will be useful for lists.
 
-So, how do we manipulate lists? In fact, we rather use pairs. This means that, instead of using the list `(2 3 5)`{.scheme}, we have the following pair: `(2 (3 (5 #nil)))`{.scheme}. The last element is concatenated with the special symbol `#nil`{.scheme}, and then, this pair becomes the second part of a pair, and so on.
+So, how do we manipulate lists? In fact, we rather use pairs. This means that, instead of using the list `(2 3 5)`, we have the following pair: `(2 (3 (5 #nil)))`. The last element is concatenated with the special symbol `#nil`, and then, this pair becomes the second part of a pair, and so on.
 
-These two forms are strictly equivalent. However, as it is more convenient to work with lists, we shall have a constructor `list`{.scheme}. Applied to an arbitrary number of arguments, it will create the series of pairs representing the list of the arguments. Let's get back to pairs.
+These two forms are strictly equivalent. However, as it is more convenient to work with lists, we shall have a constructor `list`. Applied to an arbitrary number of arguments, it will create the series of pairs representing the list of the arguments. Let's get back to pairs.
 
 In order to manipulate pairs, we have to be able to:
 
@@ -45,7 +45,7 @@ In order to manipulate pairs, we have to be able to:
 
 - extract the second element of a given pair.
 
-We will then have three primitives that will do exactly this: `cons`{.scheme}, `car`{.scheme} and `cdr`{.scheme}.
+We will then have three primitives that will do exactly this: `cons`, `car` and `cdr`.
 Here is a few examples to show how these can be used.
 
 ```scheme
@@ -63,17 +63,17 @@ Here is a few examples to show how these can be used.
 (3, #nil)
 ```
 
-We can see that, from a list point of view, `car`{.scheme} returns the first element of the list in argument, and `cdr`{.scheme} returns the list without its first element. We call this the *head* and *tail* of a list.
+We can see that, from a list point of view, `car` returns the first element of the list in argument, and `cdr` returns the list without its first element. We call this the *head* and *tail* of a list.
 
 
-Another primitive which will be useful is `null?`{.scheme}, which returns `#t`{.scheme} if the list in argument is `#nil`{.scheme} and `#f`{.scheme} if it is not.
+Another primitive which will be useful is `null?`, which returns `#t` if the list in argument is `#nil` and `#f` if it is not.
 
-Other similar primitives available for ints are : `=`{.scheme}, `<=`{.scheme}, `>=`{.scheme}, `<`{.scheme} and `>`{.scheme}. These are prefix operators, and their meaning is self-explanatory.
+Other similar primitives available for ints are : `=`, `<=`, `>=`, `<` and `>`. These are prefix operators, and their meaning is self-explanatory.
 
 
 Now we can talk about variables and bindings.
 
-First, we can bind locally a variable. It corresponds to the `let a = 3 in expr`{.ocaml}. In order to achieve a local definition in our Lisp, we can use the keyword `let`{.scheme} as following:
+First, we can bind locally a variable. It corresponds to the `let a = 3 in expr`{.ocaml}. In order to achieve a local definition in our Lisp, we can use the keyword `let` as following:
 
 ```scheme
 >>> (let x 2 (+ x x))
@@ -82,9 +82,9 @@ First, we can bind locally a variable. It corresponds to the `let a = 3 in expr`
 Error: unbound variable
 ```
 
-The primitive `let`{.scheme} takes three arguments: the variable name, the value we want to assign, and the expression we want to evaluate.
+The primitive `let` takes three arguments: the variable name, the value we want to assign, and the expression we want to evaluate.
 
-Another available primitive is `define`{.scheme}. It allows us to declare a global definition. This primitive takes two arguments: the name of the variable, and the value.
+Another available primitive is `define`. It allows us to declare a global definition. This primitive takes two arguments: the name of the variable, and the value.
 It doesn't return anything, and can be used as showed below:
 
 ```scheme
@@ -95,17 +95,17 @@ It doesn't return anything, and can be used as showed below:
 6
 ```
 
-At this point, it seems only natural to introduce functions. We work with anonymous functions, as the keyword `define`{.scheme} can then be used to name them.
-The keyword for that is `lambda`{.scheme}, in refence to Alonzo Church's lambda calculus. The `lambda`{.scheme} primitive takes two arguments: a list of arguments and the result expression. Let's look at some examples.
+At this point, it seems only natural to introduce functions. We work with anonymous functions, as the keyword `define` can then be used to name them.
+The keyword for that is `lambda`, in refence to Alonzo Church's lambda calculus. The `lambda` primitive takes two arguments: a list of arguments and the result expression. Let's look at some examples.
 
 ```scheme
 >>> (lambda (x) (+ x x))
 <fun>
 ```
 
-Here, we have the function that takes an argument, named `x`{.scheme}, and returns the double of `x`{.scheme}. The variable `x`{.scheme} is between parentheses because the `lambda`{.scheme} primitive takes a *list* of arguments as its first argument.
+Here, we have the function that takes an argument, named `x`, and returns the double of `x`. The variable `x` is between parentheses because the `lambda` primitive takes a *list* of arguments as its first argument.
 
-This function is stricly equivalent to `(lambda (y) (+ y y))`{.scheme}, as we only renamed the variable.
+This function is stricly equivalent to `(lambda (y) (+ y y))`, as we only renamed the variable.
 
 If we want to sum two integers, we can write the following function:
 
@@ -126,8 +126,8 @@ We can combine this with local definitions:
 
 This gives us the function that takes an int, and returns the sum of this int and 2.
 
-Let's go back to the following example: `(define sum (lambda (x y) (+ x y)))`{.scheme}.
-A shorter way to write that is `(define (sum x y) (+ x y))`{.scheme}. It is more easy to understand, but it only is syntactic sugar.
+Let's go back to the following example: `(define sum (lambda (x y) (+ x y)))`.
+A shorter way to write that is `(define (sum x y) (+ x y))`. It is more easy to understand, but it only is syntactic sugar.
 
 The last thing we need to start playing is the conditional instruction. It is rather straightforward:
 
@@ -138,7 +138,7 @@ The last thing we need to start playing is the conditional instruction. It is ra
 1
 ```
 
-The primitive `if`{.scheme} takes, as you can see, three arguments. The first one will be evaluated to a boolean. If it is true, then the result of the whole expression will be the evaluation of the second argument. If not, then the third argument will be evaluated and returned.
+The primitive `if` takes, as you can see, three arguments. The first one will be evaluated to a boolean. If it is true, then the result of the whole expression will be the evaluation of the second argument. If not, then the third argument will be evaluated and returned.
 
 Here we are, we have a basic description of this minimalistic language. As it is compatible with [guile](https://www.gnu.org/software/guile/), we will use this interpreter for now. This will allow us to learn how to use our Lisp. Then, I will show you how I wrote my own interpreter for this language.
 
