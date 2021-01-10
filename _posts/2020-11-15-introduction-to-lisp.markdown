@@ -1,6 +1,6 @@
 ---
 layout: post
-description: This is a test
+description: First blog post! I introduce Lisp, one of the oldest programming languages.
 ---
 
 
