@@ -140,6 +140,8 @@ The last thing we need to start playing is the conditional instruction. It is ra
 
 The primitive `if` takes, as you can see, three arguments. The first one will be evaluated to a boolean. If it is true, then the result of the whole expression will be the evaluation of the second argument. If not, then the third argument will be evaluated and returned.
 
+There is another construct, called `quote`, that we will not use a lot. I will just say that `quote x` returns `x` without evaluating it.
+
 Here we are, we have a basic description of this minimalistic language. As it is compatible with [guile](https://www.gnu.org/software/guile/), we will use this interpreter for now. This will allow us to learn how to use our Lisp. Then, I will show you how I wrote my own interpreter for this language.
 
 -----
