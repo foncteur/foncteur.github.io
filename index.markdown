@@ -3,13 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Odile Radet
+title: Antonin Radet
 ---
 # Welcome!
 
 ## About me
 
-My résumé is available [here](CV.pdf)! If you want to discuss any topic, or ask any question, feel free to drop me an email at [firstname].[lastname]@ens-rennes.fr.
+My résumé is available [here](CV.pdf)! If you want to discuss any topic, or ask any question, feel free to drop me an email at [firstname].[lastname]@protonmail.com
 
 
 Please keep in mind that this is still a recent website, so please be indulgent about what you will find: it’s still an early work in progress, and the projects I’ve linked are quite old.
