@@ -18,7 +18,7 @@ Please keep in mind that this is still a recent website, so please be indulgent 
 
 I’m currently pursuing my master’s degree in computer science at [École Normale Supérieure de Rennes](http://www.ens-rennes.fr/) and [Université de Paris](https://u-paris.fr/en/498-2/).
 
-You can find my résumé here.
+You can find my résumé [here](CV.pdf).
 
 I’m mainly interested in compilers and interpreters, programming languages and functional programming, along with formal verification.
 
