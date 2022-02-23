@@ -9,7 +9,7 @@ title: Orphée Radet
 
 ## About me
 
-My résumé is available [here](CV.pdf)! If you want to discuss any topic, or ask any question, feel free to drop me an email at [firstname].[lastname]@protonmail.com
+My résumé is available [here](CV.pdf)! If you want to discuss any topic, or ask any question, feel free to drop me an email at [firstname].[lastname]@gmail.com
 
 
 Please keep in mind that this is still a recent website, so please be indulgent about what you will find: it’s still an early work in progress, and the projects I’ve linked are quite old.
