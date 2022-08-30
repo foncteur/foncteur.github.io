@@ -3,16 +3,20 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Antonin Radet
+title: Orphée Radet
 ---
 # Welcome!
 
 ## About me
 
-My résumé is available [here](CV.pdf)! If you want to discuss any topic, or ask any question, feel free to drop me an email at [firstname].[lastname]@protonmail.com
+My résumé is available [here](CV.pdf)! If you want to discuss any topic, or ask any question, feel free to drop me an email at [firstname].[lastname]@proton.me
 
+
+I'm a queer and autistic person. My pronouns are they/them (or she/her is it's simpler in your language).
+I want to be open about my experience and my mental health journey.
 
 Please keep in mind that this is still a recent website, so please be indulgent about what you will find: it’s still an early work in progress, and the projects I’ve linked are quite old.
+
 
 ## Computer science
 

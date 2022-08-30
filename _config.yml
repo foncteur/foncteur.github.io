@@ -21,8 +21,13 @@
 title: foncteur
 email: orphee.radet@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi, my name is Orphée! I am a Computer Science student, a musician, and a parent.
-  Here is my website! In the future, you may find blog posts and projects about all kinds of things,
+  Hi, my name is Orphée! I am a Computer Science grad student, a musician, and a parent.
+  Here is my website! 
+
+  I'm especially interested in formal methods and how to use them to ensure social fairness and software reliability.
+
+  
+  In the future, you may find blog posts and projects about all kinds of things,
   from compilers and interpreters to algorithms and functional programming. Some non-CS-related
   posts may appear from time to time. Enjoy!
 baseurl: "" # the subpath of your site, e.g. /blog
